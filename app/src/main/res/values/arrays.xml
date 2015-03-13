@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_key_security_questions">
+        <item>what was your first school?</item>
+        <item>What was the last name of your favorite teacher?</item>
+        <item>What was your childhood nickname?</item>
+    </string-array>
+    
+    <string-array name="array_values_security_questions">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

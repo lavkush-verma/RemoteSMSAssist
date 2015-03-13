@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings" >
+        <SwitchPreference
+            android:key="prefIsRemoteAccessEnabled"
+            android:summaryOff="@string/settings_remote_assist_summary_off"
+            android:summaryOn="@string/settings_remote_assist_summary_on"
+            android:title="@string/settings_remote_assist" />
+        <SwitchPreference
+            android:key="prefIsDeviceAdminEnabled"
+            android:summaryOff="@string/settings_device_admin_summary_off"
+            android:summaryOn="@string/settings_device_admin_summary_on"
+            android:title="@string/settings_device_admin" />
+
+        <EditTextPreference
+            android:defaultValue="XXXXX"
+            android:key="prefSecretCode"
+            android:summary="@string/settings_secret_code_default"
+            android:title="@string/settings_secret_code" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/array_key_security_questions"
+            android:entryValues="@array/array_values_security_questions"
+            android:key="prefSecurityQuestion"
+            android:summary="@string/settings_security_question_summary"
+            android:title="@string/settings_security_question_title" />
+
+        <EditTextPreference
+            android:key="prefSecurityAnswer"
+            android:summary="@string/settings_security_answer_summary"
+            android:title="@string/settings_security_answer_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
